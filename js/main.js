@@ -2,10 +2,27 @@
 
 $(document).ready(function() {
 
-    $("video.module:not(#jenny)").hover(function() {
+    var rollover_videos = $("video.module").not("#jenny");
+
+    rollover_videos.hover(function() {
+        rollover_videos.not($(this)).each(function() {
+            this.pause();
+        });
         this.play();
     }, function() {
-        this.pause();
+        rollover_videos.each(function() {
+            this.play();
+        })
+    })
+
+    $("#jonathan, #jarel").hover(function() {
+        rollover_videos.each(function() {
+            this.pause();
+        });
+    }, function() {
+        rollover_videos.each(function() {
+            this.play();
+        })
     })
 
 });
