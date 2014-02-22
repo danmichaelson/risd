@@ -98,7 +98,7 @@ textarea {
    ========================================================================== */
 
    body {
-       background: rgb(0, 0, 0);
+       background: rgb(255, 255, 255);
    }
 
    #center {
@@ -108,14 +108,16 @@ textarea {
    }
 
    h1 {
-       color: rgb(255, 255, 255);
+       color: rgb(200, 200, 200);
        font-size: 72px;
        font-weight: normal;
    }
 
    #grid {
        position: relative;
+       height: 800px;
        margin-top: 50px;
+       margin-bottom: 100px;
    }
 
    #grid img {
@@ -129,13 +131,13 @@ textarea {
         top: 0;
    }
    #grid img:nth-child(5), #grid img:nth-child(6), #grid img:nth-child(7), #grid img:nth-child(8) {
-        top: 210px;
+        top: 200px;
    }
    #grid img:nth-child(9), #grid img:nth-child(10), #grid img:nth-child(11), #grid img:nth-child(12) {
-        top: 420px;
+        top: 400px;
    }
    #grid img:nth-child(13), #grid img:nth-child(14), #grid img:nth-child(15), #grid img:nth-child(16) {
-        top: 630px;
+        top: 600px;
    }
 
    /* Columns */
@@ -143,13 +145,13 @@ textarea {
         left: 0;
    }
    #grid img:nth-child(2), #grid img:nth-child(6), #grid img:nth-child(10), #grid img:nth-child(14) {
-        left: 210px;
+        left: 200px;
    }
    #grid img:nth-child(3), #grid img:nth-child(7), #grid img:nth-child(11), #grid img:nth-child(15) {
-        left: 420px;
+        left: 400px;
    }
    #grid img:nth-child(4), #grid img:nth-child(8), #grid img:nth-child(12), #grid img:nth-child(16) {
-        left: 630px;
+        left: 600px;
    }
 
 
