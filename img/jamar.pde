@@ -10,7 +10,7 @@ void setup() {
   size(200, 200);
   background(0,0,0);
   moon = loadImage("img/jamar.png");
-    smooth();
+  smooth();
   for (int i = 0; i < xpos.length; i ++ ) {
     xpos[i] = 0; 
     ypos[i] = 0;
@@ -20,7 +20,7 @@ void setup() {
 void draw() {
   background(255);
   
-    // Shift array values
+  // Shift array values
   for (int i = 0; i < xpos.length-1; i ++ ) {
     xpos[i] = xpos[i+1];
     ypos[i] = ypos[i+1];
