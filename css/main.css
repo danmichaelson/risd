@@ -121,9 +121,9 @@ textarea {
    }
 
    h1 {
-       color: rgb(255, 255, 0);
-       font-size: 64px;
-       line-height: 100px;
+       color: blue;
+       font-size: 36px;
+       line-height: 140px;
        font-weight: normal;
        text-align: center;
    }
@@ -139,6 +139,13 @@ textarea {
        position: absolute;
        width: 200px;
        height: 200px;
+   }
+
+   video.module, canvas.module {
+       cursor: pointer;
+   }
+   #jenny.module {
+       cursor: default;
    }
 
    /* Rows */
