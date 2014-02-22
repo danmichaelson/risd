@@ -97,8 +97,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+    @font-face {
+        font-family: 'baj_annai_betamedium';
+        src: url('../fonts/baj-annai-beta-webfont.eot');
+        src: url('../fonts/baj-annai-beta-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/baj-annai-beta-webfont.woff') format('woff'),
+        url('../fonts/baj-annai-beta-webfont.ttf') format('truetype'),
+        url('../fonts/baj-annai-beta-webfont.svg#baj_annai_betamedium') format('svg');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
    body {
        background: rgb(255, 255, 255);
+       font-family: baj_annai_betamedium;
    }
 
    #center {
@@ -108,8 +121,9 @@ textarea {
    }
 
    h1 {
-       color: blue;
-       font-size: 72px;
+       color: rgb(255, 255, 0);
+       font-size: 64px;
+       line-height: 100px;
        font-weight: normal;
        text-align: center;
    }
