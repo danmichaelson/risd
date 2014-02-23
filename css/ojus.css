@@ -1,0 +1,53 @@
+#ojus #container {
+	width: 200px;
+	height: 200px;
+	margin:0;
+	padding:0;
+
+}
+#ojus #start {
+	width: 200px;
+	height:200px;
+	margin: 0;
+	padding:0;
+	background-color:white;
+}
+
+#ojus img {
+	width: 200px;
+	height: 200px;
+	display:none; 
+}
+
+/*Starting buttons*/
+#ojus #start:hover {
+	cursor:pointer;
+}
+
+#ojus #slidestart {
+	position: absolute;
+	z-index:4;
+	display: block;
+}
+
+#ojus #bluebutton {
+	position: absolute;
+	z-index:3;
+	display: block;
+}
+
+#ojus #yellowbutton {
+	position: absolute;
+	z-index:3;
+}
+
+/***** Slides *****/
+
+#ojus .gif {
+	position: absolute;
+	z-index:0;
+}
+
+#ojus .gif:hover {
+	cursor: pointer;
+}

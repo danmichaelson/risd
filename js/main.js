@@ -49,24 +49,24 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 
-    $(".hoverbox").hover(function(){
+    $("#jonathan .hoverbox").hover(function(){
 
-        $(".pixbox").width("1000px");
-        $(".pixbox").height("1000px");
-        $(".pixbox").css({"position":"absolute","top":"0","left":"0"});
-        $('.pix').addClass('rotated');
-        $(".pix").animate({
+        $("#jonathan .pixbox").width("1000px");
+        $("#jonathan .pixbox").height("1000px");
+        $("#jonathan .pixbox").css({"position":"absolute","top":"0","left":"0"});
+        $('#jonathan .pix').addClass('rotated');
+        $("#jonathan .pix").animate({
             "margin-left": '+=65',
             "margin-top": '+=65',
 
         }, 'fast');
 
     }, function(){
-        $(".pixbox").width("160px");
-        $(".pixbox").height("70px");
-        $(".pixbox").css("position","static");
-        $('.pix').removeClass('rotated');
-        $(".pix").animate({
+        $("#jonathan .pixbox").width("160px");
+        $("#jonathan .pixbox").height("70px");
+        $("#jonathan .pixbox").css("position","static");
+        $('#jonathan .pix').removeClass('rotated');
+        $("#jonathan .pix").animate({
             "margin-left": '-=65',
             "margin-top": '-=65',
 
@@ -76,3 +76,80 @@ $(document).ready(function(){
 
 });
 
+/* OJUS */
+
+$(document).ready(function(){
+    $("#ojus #start").hover(function() {
+        $("#ojus #bluebutton").css("display", "none");
+        $("#ojus #yellowbutton").css("display","block");
+    }, function() {
+        $("#ojus #bluebutton").css("display", "block");
+        $("#ojus #yellowbutton").css("display","none");
+    });
+
+    //if there is a click within the designated area, get the id of current element and change both id and src code
+
+    var clicks1 = 0;
+    var clicks2 = 0;
+
+    $("#ojus #container").mouseenter(function() {
+
+        $("#ojus .content").unbind("click").click(function() {
+
+            clicks1 += 1;
+
+            switch(this.id) {
+                case "start":
+                    $("#ojus #start").css("display", "none");
+                    $("#ojus #slide1").css("display", "block");
+                    clicks2 += 1;
+                    break;
+                case "slide1":
+                    $("#ojus #slide1").attr('src', 'img/ojus/slide2.gif');
+                    $(this).attr('id', 'slide2');
+                    clicks2 += 1;
+                    break;
+                case "slide2":
+                    $("#ojus #slide2").attr('src', 'img/ojus/slide3.gif');
+                    $(this).attr('id', 'slide3');
+                    clicks2 += 1;
+                    break;
+                case "slide3":
+                    $("#ojus #slide3").attr('src', 'img/ojus/slide4.gif');
+                    $(this).attr('id', 'slide4');
+                    clicks2 += 1;
+                    break;
+                case "slide4":
+                    $("#ojus #slide4").attr('src', 'img/ojus/slide5.gif');
+                    $(this).attr('id', 'slide5');
+                    clicks2 += 1;
+                    break;
+                case "slide5":
+                    $("#ojus #slide5").attr('src', 'img/ojus/slide6.gif');
+                    $(this).attr('id', 'slide6');
+                    clicks2 += 1;
+                    break;
+                case "slide6":
+                    $("#ojus #slide6").attr('src', 'img/ojus/slide7.gif');
+                    $(this).attr('id', 'slide7');
+                    clicks2 += 1;
+                    break;
+                case "slide7":
+                    $("#ojus #slide7").attr('src', 'img/ojus/slide8.gif');
+                    $(this).attr('id', 'slide8');
+                    clicks2 += 1;
+                    break;
+                case "slide8":
+                    $("#ojus #slide8").attr('src', 'img/ojus/slide1.gif');
+                    $(this).attr('id', "slide1");
+                    $("#ojus #slide1").css("display", "none");
+                    $("#ojus #start").css("display", "block");
+                    clicks2 += 1;
+                    break;
+
+            }
+
+        })
+    });
+
+});
