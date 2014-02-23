@@ -47,30 +47,28 @@ $(document).ready(function() {
 
 /* JONATHAN */
 
-$(document).ready(function() {
+$(document).ready(function(){
 
-    var divsize = ((Math.random()*100) + 50).toFixed();
+    $(".hoverbox").hover(function(){
 
-    $(".pixbox").hover(function(){
-
-        $(this).width("800px");
-        $(this).height("800px");
-        $(this).css({"position":"absolute","top":"0","left":"0"});
-        $("#jonathan img").addClass('rotated');
+        $(".pixbox").width("1000px");
+        $(".pixbox").height("1000px");
+        $(".pixbox").css({"position":"absolute","top":"0","left":"0"});
+        $('pix').addClass('rotated');
         $(".pix").animate({
-            "margin-left": '+=50',
-            "margin-top": '+=50',
+            "margin-left": '+=65',
+            "margin-top": '+=65',
 
         }, 'fast');
 
     }, function(){
-        $(this).width("160px");
-        $(this).height("70px");
-        $(this).css("position","static");
-        $("#jonathan img").removeClass('rotated');
+        $(".pixbox").width("160px");
+        $(".pixbox").height("70px");
+        $(".pixbox").css("position","static");
+        $('pix').removeClass('rotated');
         $(".pix").animate({
-            "margin-left": '-=50',
-            "margin-top": '-=50',
+            "margin-left": '-=65',
+            "margin-top": '-=65',
 
         }, 'fast');
 
