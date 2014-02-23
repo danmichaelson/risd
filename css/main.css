@@ -168,7 +168,26 @@ iframe {
 
 
 
+/* Name list */
 
+ul#names {
+    list-style:none; 
+    margin:0 0 12px 0; 
+    padding:12px 0 0 0;
+    padding-left: 1em; 
+    text-indent: 1em; 
+    width:1000px;
+    border-top: 1px solid rgba(0,0,255,.7);
+}
+
+ul#names li {
+        font-size: 12px; 
+        margin-bottom: 12px; 
+        float:left; 
+        display:inline; 
+        width: 25%; 
+        color:rgba(0,0,255,.7);
+}
 
 
 
