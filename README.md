@@ -1,11 +1,18 @@
-Interactive
-
-Jonathan: Will explode over the whole poster
+# Interactive
 
 Ojus: PPT becomes interactive
 
-Christina: Track mouse
+Jonathan: Will explode over the whole poster
 
-Jenny: Plays constantly regardless of mouseover. When her loop is over, everything resets and locations randomly change... except Jonathan.
+# Posters
 
-Everyone else: Plays on mouseover, pauses on mouseout
+Brian with yellow type overprinted, and simple with black type in grid
+
+Brienne gray
+
+Kyle grid
+
+Jenny the one in the vertical stack
+
+Jonathan rotated
+
