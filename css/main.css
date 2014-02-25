@@ -186,7 +186,21 @@ ul#names li {
         float:left; 
         display:inline; 
         width: 25%; 
-        color:rgba(0,0,255,.7);
+        color:rgba(0,0,255,.6);
+}
+
+ul#names li a:link, ul#names li a:visited {
+    color:rgba(0,0,255,.7);
+    text-decoration: none;
+
+}
+
+
+ul#names li a:hover, ul#names li a:active {
+    color:rgba(0,0,255,1);
+    text-decoration: none;
+   /* padding-bottom: 2px;
+    border-bottom: 1px solid blue;*/
 }
 
 
