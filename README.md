@@ -1,2 +1,2 @@
-RISD Visiting Designers workshop
+# RISD Visiting Designers workshop
 February 20-23, 2014
